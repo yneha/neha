@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Chit Chat-Profile</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script
+	src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body ng-app=""style="font-family: Comic Sans MS">
+
+	<div class="container" style="background-color: #F6F5F5">
+<div ng-include="'header.html'"></div> 
+  <h2>About You!</h2>
+  <img src="cinqueterre.jpg" class="img-circle" alt="Profile Picture" width="304" height="236">
+  <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#Photos">Photos</a></li>
+    <li><a data-toggle="tab" href="#Posts">Recent Posts</a></li>
+    <li><a data-toggle="tab" href="#Friends">Friends</a></li>
+    <li><a data-toggle="tab" href="#Groups">Groups</a></li>
+    <li><a data-toggle="tab" href="#Profile">Complete Profile</a></li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="Photos" class="tab-pane fade in active">
+      <h3>Photos</h3>
+      
+    </div>
+    <div id="Posts" class="tab-pane fade">
+      <h3>Recent Posts</h3>
+       <a href="#" class="btn btn-danger">Remove Post</a>
+    </div>
+    <div id="Friends" class="tab-pane fade">
+      <h3>Friends</h3>
+      <a href="#" class="btn btn-danger">Unfriend</a>
+      
+    </div>
+    <div id="Groups" class="tab-pane fade">
+      <h3>Groups</h3>
+       <a href="#" class="btn btn-danger">Leave Group</a>
+    </div>
+    <div id="Profile" class="tab-pane fade">
+      <h3>Complete Profile</h3>
+      Form To Collect More Details
+      
+    </div>
+  </div>
+  <div ng-include="'footer.html'"></div>
+</div>
+
+</body>
+</html>

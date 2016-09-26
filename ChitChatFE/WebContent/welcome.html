@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Chit Chat-Welcome</title>
+<link rel="stylesheet"
+	href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<script
+	src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<link rel="stylesheet"
+	href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script
+	src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<style>
+	tab1 {
+	padding-left: 10em;
+}
+body {
+    background-color: #F6F5F5;
+}
+	</style>
+</head>
+<body ng-app="" style="font-family: Comic Sans MS">
+
+	<div class="container" style="background-color: #F6F5F5">
+		<div ng-include="'header.html'"></div>
+		<div class="row" >
+			<div class="col-sm-2" >
+				<h4>
+					<a href="friends.html">Friends</a><br>
+					<br>
+					<br> <a href="groups.html">Groups</a><br>
+					<br>
+					<br> <a href="messages.html">Messages</a><br>
+					<br>
+					<br>
+					<a href="photos.html">Photos</a><br>
+					<br>
+					<br>
+					<a href="posts.html">Posts</a><br>
+					<br>
+					<br>
+				</h4>
+			</div>
+			<div class="col-sm-5" >
+			
+				<div class="row">
+        <div class="col-sm-12" style="background-color: white" >
+					<form >
+						<div class="form-group">
+						<hr>
+							<input type="text" class="form-control" name="password"
+								placeholder="What's on Your Mind?"><hr>
+								<a href="#" class="btn btn-primary">POST TO YOUR WALL</a> 
+						</div>
+
+					</form>
+				</div></div><br>
+				<div class="row"><div class="col-sm-12"></div></div>
+				<div class="row">
+        <div class="col-sm-12" style="background-color: white">
+				<h3>
+				Recent Posts
+				</h3><br><br><br>
+				</div></div></div>
+			<div class="col-sm-1"></div>
+			<div class="col-sm-4" style="background-color: white">
+				<h4>TOP DISCUSSIONS</h4>
+				 
+					<div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+						<ol class="carousel-indicators">
+							<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+							<li data-target="#myCarousel" data-slide-to="1"></li>
+							<li data-target="#myCarousel" data-slide-to="2"></li>
+						</ol>
+				<div class="carousel-inner" role="listbox">
+							<div class="item active">
+								<h6>
+								<a href="discussion?key=java">
+								Java
+								<p>
+								sdfbkjbfjkb
+								<br>
+								ksdfhkjdfjk<br>
+								</p>
+								</a>
+								</h6>
+							</div>
+					<div class="item">
+								<h6>
+								<a href="discussion?key=java">
+								C++
+								<p>
+								sdfbkjbfjkb
+								<br>
+								ksdfhkjdfjk<br>
+								</p>
+								</a>
+								</h6>
+							</div>
+
+							<div class="item">
+								<h6>
+								<a href="discussion?key=java">
+								C++
+								<p>
+								sdfbkjbfjkb
+								<br>
+								ksdfhkjdfjk<br>
+								</p>
+								</a>
+								</h6>
+							</div>
+						</div>
+</div>
+<hr>
+<h4>Suggested Groups</h4>
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+						<ol class="carousel-indicators">
+							<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+							<li data-target="#myCarousel" data-slide-to="1"></li>
+							<li data-target="#myCarousel" data-slide-to="2"></li>
+						</ol>
+				<div class="carousel-inner" role="listbox">
+							<div class="item active">
+								<h6>
+								<a href="discussion?key=java">
+								Java
+								<p>
+								sdfbkjbfjkb
+								<br>
+								ksdfhkjdfjk<br>
+								</p>
+								</a>
+								</h6>
+							</div>
+					<div class="item">
+								<h6>
+								<a href="discussion?key=java">
+								C++
+								<p>
+								sdfbkjbfjkb
+								<br>
+								ksdfhkjdfjk<br>
+								</p>
+								</a>
+								</h6>
+							</div>
+
+							<div class="item">
+								<h6>
+								<a href="discussion?key=java">
+								C++
+								<p>
+								sdfbkjbfjkb
+								<br>
+								ksdfhkjdfjk<br>
+								</p>
+								</a>
+								</h6>
+							</div>
+						</div>
+</div>
+
+			</div>
+		</div>
+
+		<div ng-include="'footer.html'"></div>
+	</div>
+</body>
+</html>

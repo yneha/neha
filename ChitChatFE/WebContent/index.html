@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Chit Chat-Login</title>
+<link rel="stylesheet"
+	href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script
+	src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.min.js"></script>
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular-route.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
+<style>
+<!-- Navbar-->
+.navbar-default {
+	background-color: #33c0ff;
+	color: black;
+	border-radius: 0;
+}
+
+.nav.navbar-nav li a {
+	color:white;
+}
+tab1 {
+	padding-left: 3em;
+}
+</style>
+</head>
+<body ng-app="myApp" ng-controller="RegisterController as ctrl" style="font-family: Comic Sans MS">
+	<div class="container" style="background-color: #F6F5F5">
+
+
+		<!-- Navbar -->
+
+		<div class="container">
+
+			<nav class="navbar navbar-default" style="background-color:#33c0ff">
+				<div class="container">
+					<div class="navbar-header">
+						<br>
+						<br> <a class="navbar-brand" style="font-size: 40px; color:white";
+							href="login.html">Chit Chat</a>
+					</div>
+					<br>
+					<br>
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<form>
+								<input type="text" name="mail" placeholder="E-mail"> <input
+									type="password" name="password" placeholder="Password">
+								<a href="welcome.html" class="btn btn-primary">Login</a>
+								<br>
+								<h4 style="color: white">
+									<a href="forgot.html"> Forgot Password?</a>
+								</h4>
+							</form>
+						</li>
+					</ul>
+					<br> <br>
+				</div>
+			</nav>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<h3>
+						<b>Chit Chat helps you connect and share with the people in
+							your life</b>
+					</h3>
+					<img src="img\login.png" alt="login" />
+				</div>
+				<div class="col-md-1"></div>
+				<div class="col-md-5" >
+					<h3>
+						<b>Sign Up! Its Free and always will be</b>
+					</h3>
+					<form role="form"  name="myForm" ng-submit="ctrl.createUser()">
+						<div class="form-group">
+							<input type="text" class="form-control" id="name" ng-model="ctrl.user.name"
+								placeholder="Name">
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control" id="phno" ng-model="ctrl.user.phno"
+								placeholder="Phone Number">
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control" id="mail" ng-model="ctrl.user.mail"
+								placeholder="E-mail">
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control" id="password" ng-model="ctrl.user.password"
+								placeholder="New Password">
+						</div>
+						<div class="form-group"> 
+							<input type="text" class="form-control" id="password2" 
+								placeholder="Re-Type Password">
+						</div>
+						<br><br>
+						<div class="form-actions floatRight">
+                              <input type="submit"   class="btn btn-primary btn-sm" value="Submit"/>
+                              <button type="reset" ng-click="ctrl.reset()" class="btn btn-warning btn-sm" ng-disabled="myForm.$pristine">Reset Form</button>
+                          </div>
+					</form><br><br><br>
+				</div>
+			</div>
+		</div>
+	
+<div ng-include="'footer.html'"></div>
+
+</div>
+<script src="app.js"></script>
+	
+	<script src="RegisterController.js"></script>
+	<script src="RegistrationService.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Chit Chat-Find Friends</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script
+	src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body ng-app="" style="font-family: Comic Sans MS">
+
+	<div class="container" style="background-color: #F6F5F5">
+<div ng-include="'header.html'"></div>
+List Of all Available Members in Chit Chat
+<div class="container">
+	
+		<div class="row">
+			<div class="col-sm-6 col-sm-offset-3 ">
+				<div id="imaginary_container">
+					<div class="input-group stylish-input-group">
+						<div class="form-group has-feedback has-feedback-left">
+							<input type="text"  ng-model="test" class="form-control" placeholder="Search Your Friend" />
+							<i class="glyphicon glyphicon-search form-control-feedback"></i>
+						</div>
+						<span class="input-group-addon">
+							<button type="submit">
+								<span class="glyphicon glyphicon-arrow-right"></span>
+							</button>
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	Name
+	Student/Alumini/Professor	<a href="#" class="btn btn-primary">Send Request</a> 
+<div ng-include="'footer.html'"></div>
+</div>
+</body>
+</html>

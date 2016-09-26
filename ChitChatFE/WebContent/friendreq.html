@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Chit Chat-Friend Requests</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script
+	src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body ng-app="app" style="font-family: Comic Sans MS">
+<script src="app.js"></script>
+	
+	<script src="c_register/RegisterController.js"></script>
+	<script src="c_register/RegistrationService.js"></script>
+	
+	<div class="container" style="background-color: #F6F5F5">
+<div ng-include="'header.html'"></div>
+List Of Friend Requests For You
+Name
+	Student/Alumini/Professor	<a href="#" class="btn btn-primary">Accept Request</a>
+	<a href="#" class="btn btn-danger">Delete Request</a> 
+	<h4 ng-repeat="x in list">
+	{{x.name}}
+	{{x.mail}}
+	{{x.phno}}
+	{{x.password}}</h4>
+	
+	
+<div ng-include="'footer.html'"></div>
+</div>
+</body>
+</html>

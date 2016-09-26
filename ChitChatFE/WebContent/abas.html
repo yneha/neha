@@ -1,0 +1,64 @@
+<!doctype html>
+<html ng-app="myApp">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script
+	src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.min.js"></script>
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular-route.min.js"></script>
+</head>
+<body >
+<div class="container" ng-app="myApp" ng-controller="RegisterController as ctrl">
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">Collaboration</a>
+			</div>
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="#/">Home</a></li>
+				<li><a href="#/job_opportunities"> Job Opportunities </a></li>
+				<li><a href="#/blog">Blogs</a></li>
+				<li><a href="#/event">Events</a></li>
+				<li><a href="#/about">About</a></li>
+					
+					
+					
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#/register" ng-click="ctrl.fetchAllUsers()"><span
+						class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+				<li><a href="#/login"><span
+						class="glyphicon glyphicon-log-in"></span> Login</a></li>
+			</ul>
+		</nav>
+</div>
+<h3 style="color:white ">Welcime
+	
+		
+					<div ng-repeat="x in list">
+	Name: {{x.name}}
+	MAil: {{x.mail}}
+	Phni	:	{{x.phno}}
+	Pssword:	{{x.password}}
+	</div>
+			
+</h3>
+	<script src="app.js"></script>
+	
+	<script src="RegisterController.js"></script>
+	<script src="RegistrationService.js"></script>
+	
+
+</div>
+	
+
+</body>
+</html>

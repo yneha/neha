@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Chit Chat-Admin</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script
+	src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body ng-app=""style="font-family: Comic Sans MS">
+<div class="container" style="background-color: #F6F5F5">
+<!-- Navbar -->
+
+		<div class="container">
+
+			<nav class="navbar navbar-default" 
+			data-spy="affix"  style="background-color: #33c0ff">
+			
+					<div class="navbar-header">
+						<a class="navbar-brand"
+							style=" color: white" ;
+							href="login.html">Chit
+							Chat</a>
+					</div>
+					<ul class="nav navbar-nav navbar-right">
+						
+						<li>	<a class="navbar-brand" title="My Profile" href="profile.html">Name</a></li>
+						<li>	<a class="navbar-brand" href="welcome.html">Home</a></li>
+						<li>
+						<a  class="navbar-brand" title="Friend Requests" href="friendreq.html"><i class="fa fa-users"></i></a>
+						</li>
+						<li><a class="navbar-brand" title="Recent Chats" href="chat.html"><i class="fa fa-comments"></i></a>
+						</li>
+						<li><a class="navbar-brand" title="Add A New Friend" href="newfriend.html"><i class="fa fa-user-plus"></i></a>
+						</li>
+						<li class="dropdown"><a class="dropdown-toggle"
+				data-toggle="dropdown" href="#"><i class="fa fa-lock"></i><span class="caret"></span></a>
+				<ul class="dropdown-menu">
+					<li><a href="group.html" style="color: black">Find Groups</a></li>
+					<li><a href="help.html" style="color: black">Help</a></li>
+					<li><a href="prob.html" style="color: black">Report a Problem</a></li>
+					<li><a href="logout.html" style="color: black">Logout</a></li>
+				
+				</ul></li>
+						</ul>
+					
+				
+			</nav></div>
+	<br><br><br><br><br><br><br><br><br>
+	<ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#Blogs">Blogs</a></li>
+    <li><a data-toggle="tab" href="#Members">Members</a></li>
+    <li><a data-toggle="tab" href="#Friends">Friends</a></li>
+    <li><a data-toggle="tab" href="#Groups">Groups</a></li>
+    <li><a data-toggle="tab" href="#Profile">Complete Profile</a></li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="Blogs" class="tab-pane fade in active">
+      <h3>Blogs</h3>
+      
+    </div>
+    <div id="Members" class="tab-pane fade">
+      <h3>Members</h3>
+       <a href="#" class="btn btn-danger">Remove Post</a>
+    </div>
+    <div id="Friends" class="tab-pane fade">
+      <h3>Friends</h3>
+      <a href="#" class="btn btn-danger">Unfriend</a>
+      
+    </div>
+    <div id="Groups" class="tab-pane fade">
+      <h3>Groups</h3>
+       <a href="#" class="btn btn-danger">Leave Group</a>
+    </div>
+    <div id="Profile" class="tab-pane fade">
+      <h3>Complete Profile</h3>
+      Form To Collect More Details
+      
+    </div>
+	</div>
+	</div>
+	
+	</body>
+	</html>

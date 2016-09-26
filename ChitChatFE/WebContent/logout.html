@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Chit Chat-Logout</title>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<link rel="stylesheet"
+	href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script
+	src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+<!-- Navbar-->
+.navbar-default {
+	background-color: #33c0ff;
+	color: black;
+	border-radius: 0;
+}
+
+.nav.navbar-nav li a {
+	color:white;
+}
+tab1 {
+	padding-left: 3em;
+}
+tab2 {
+	padding-left: 10em;
+}
+</style>
+</head>
+<body ng-app="" style="font-family: Comic Sans MS">
+	<div class="container" style="background-color: #F6F5F5">
+
+
+		<!-- Navbar -->
+
+		<div class="container">
+
+			<nav class="navbar navbar-default" style="background-color:#33c0ff">
+				<div class="container">
+					<div class="navbar-header">
+						<br>
+						<br> <a class="navbar-brand" style="font-size: 40px; color:white";
+							href="login.html">Chit Chat</a>
+					</div>
+					<br>
+					<br>
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<form>
+								<input type="text" name="mail" placeholder="E-mail"> <input
+									type="password" name="password" placeholder="Password">
+								<a href="welcome.html" class="btn btn-primary">Login</a>
+								<br>
+								<h4 style="color: white">
+									<a href="forgot.html"> Forgot Password?</a>
+								</h4>
+							</form>
+						</li>
+					</ul>
+					<br> <br>
+				</div>
+			</nav>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<h3>
+						<b>Thanks For Stopping By & Come Back Soon 'Coz We Already MISS YOU :(</b>
+					</h3>
+					<tab2><img src="img\logout.png" alt="login" /></tab2>
+					
+				</div>
+				<div class="col-md-1"></div>
+				<div class="col-md-5">
+					<h3>
+						<b>Sign Up! Its Free and always will be</b>
+					</h3>
+					<form role="form" ng-app="reg">
+						<div class="form-group">
+							<input type="text" class="form-control" name="name"
+								placeholder="Name">
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control" name="phno"
+								placeholder="Phone Number">
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control" name="mail"
+								placeholder="E-mail">
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control" name="password"
+								placeholder="New Password">
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control" name="password2"
+								placeholder="Re-Type Password">
+						</div>
+						<br><br>
+						<button type="submit" class="btn btn-success">Create an account</button>
+					</form><br><br><br>
+				</div>
+			</div>
+		</div>
+	
+<div ng-include="'footer.html'"></div>
+
+</div>
+
+</body>
+</html>
